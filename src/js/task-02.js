@@ -23,9 +23,9 @@ thirdIngrEl.textContent = 'Garlic';
 thirdIngrEl.classList.add = 'item';
 
 //Tomatos
-const fourIngrEl = document.createElement('li');
-fourIngrEl.textContent = 'Tomatos';
-fourIngrEl.classList.add = 'item';
+const fourthIngrEl = document.createElement('li');
+fourthIngrEl.textContent = 'Tomatos';
+fourthIngrEl.classList.add = 'item';
 
 //Herbs
 const fifthIngrEl = document.createElement('li');
@@ -37,7 +37,9 @@ const sixthIngrEl = document.createElement('li');
 sixthIngrEl.textContent = 'Condiments';
 sixthIngrEl.classList.add = 'item';
 
-
+const listEl = document.querySelector('#ingredients');
+listEl.append(firstIngrEl, secondIngrEl, thirdIngrEl, 
+	           fourthIngrEl, fifthIngrEl, sixthIngrEl);
 
 
 
