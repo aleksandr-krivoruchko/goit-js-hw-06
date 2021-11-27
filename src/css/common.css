@@ -28,6 +28,11 @@ button {
 }
 
 .item {
-  padding: 10px;
   list-style: none;
+  padding: 5px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
 }

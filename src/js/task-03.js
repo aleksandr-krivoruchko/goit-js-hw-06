@@ -15,9 +15,11 @@ const images = [
 
 const listEl = document.querySelector('.gallery');
 
-const ImagesEl = images.map(image => `<li class=item><img src=${image.url} alt=${image.alt} width='520' height='320'></img></li>`);
+const imagesEl = images.map(image => `<li class=item>
+<img class='img' src=${image.url} alt=${image.alt} ></img></li>`);
 
-listEl.insertAdjacentHTML("beforeend", ImagesEl);
+
+listEl.insertAdjacentHTML("beforeend", imagesEl);
 
 console.log(listEl);
 
