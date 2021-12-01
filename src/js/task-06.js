@@ -11,14 +11,14 @@ function onFocusInput(event) {
 
 function onBlurInput(event) {
 
-	if(event.currentTarget.value.length < lengthInputEl){
-
-		event.currentTarget.classList.remove('valid');
-		event.currentTarget.classList.add('invalid');
-
-	} else {
+	if(event.currentTarget.value.length == lengthInputEl){
 
 		event.currentTarget.classList.remove('invalid');
 		event.currentTarget.classList.add('valid');
+
+	} else {
+
+		event.currentTarget.classList.remove('valid');
+		event.currentTarget.classList.add('invalid');
 	}
 }
