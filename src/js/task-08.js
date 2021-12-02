@@ -5,17 +5,17 @@ const btnEl = formEl.lastElementChild;
 formEl.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
-	event.preventDefault();
-
-	const {
-    elements: { email, password }
-  } = event.currentTarget;
+  event.preventDefault();
+  
+const email = event.currentTarget.elements.email.value;
+  const password = event.currentTarget.elements.password.value;
+  const formData = { email, password }
 
   if (email.value === "" || password.value === "") {
-    return window.alert("Please fill in all the fields!");
+    return window.alert("Please, fill in all the fields!");
 
   }
-console.log(`elements);
-
   event.currentTarget.reset();
+  
+    return formData;
 }
