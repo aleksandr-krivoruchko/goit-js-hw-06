@@ -11,11 +11,13 @@ const email = event.currentTarget.elements.email.value;
   const password = event.currentTarget.elements.password.value;
   const formData = { email, password }
 
-  if (email.value === "" || password.value === "") {
+  if (email === "" || password === "") {
+
     return window.alert("Please, fill in all the fields!");
 
   }
-  event.currentTarget.reset();
+  console.log(formData);
   
-    return formData;
-}
+   event.currentTarget.reset();
+  }
+ 
