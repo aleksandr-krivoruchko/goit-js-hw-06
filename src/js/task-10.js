@@ -37,3 +37,4 @@ function onBtnCreateBoxes(event) {
 function onBtnDestroyBoxes(event) {
   refs.mainBox.innerHTML = '';
 }
+
